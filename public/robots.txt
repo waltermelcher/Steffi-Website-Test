@@ -1,0 +1,5 @@
+# PRE-LAUNCH: Diese Website ist noch nicht final veröffentlicht.
+# Bitte nicht crawlen oder indexieren.
+# (Maßgeblich für das Ausschließen ist das <meta name="robots" content="noindex"> im HTML.)
+User-agent: *
+Disallow: /
