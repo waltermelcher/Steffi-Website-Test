@@ -1,0 +1,88 @@
+---
+export interface Props {
+  label?: string;
+  ratio?: string;
+  round?: boolean;
+  class?: string;
+}
+const {
+  label = 'Bildplatz',
+  ratio = '4 / 3',
+  round = false,
+  class: className = '',
+} = Astro.props;
+---
+
+<div
+  class={`ph ${round ? 'ph-round' : ''} ${className}`}
+  style={`--ratio:${ratio}`}
+  role="img"
+  aria-label={`Bildplatzhalter: ${label}`}
+>
+  <svg class="ph-icon" viewBox="0 0 24 24" aria-hidden="true">
+    <path
+      d="M12 1.5l1.6 7.3 6.9-3-5 5.2 5 5.2-6.9-3L12 22.5l-1.6-7.3-6.9 3 5-5.2-5-5.2 6.9 3z"
+      fill="currentColor"
+    ></path>
+  </svg>
+  <span class="ph-label">{label}</span>
+  <span class="ph-hint">Bild folgt</span>
+</div>
+
+<style>
+  .ph {
+    aspect-ratio: var(--ratio);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    text-align: center;
+    color: var(--gold);
+    border: 1px solid rgba(234, 217, 160, 0.3);
+    border-radius: 4px;
+    background:
+      radial-gradient(120% 80% at 50% 0%, rgba(191, 215, 234, 0.08), transparent 70%),
+      repeating-linear-gradient(
+        -45deg,
+        rgba(234, 217, 160, 0.035),
+        rgba(234, 217, 160, 0.035) 2px,
+        transparent 2px,
+        transparent 11px
+      ),
+      rgba(255, 255, 255, 0.02);
+    overflow: hidden;
+    transition: border-color 0.6s ease, box-shadow 0.6s ease;
+  }
+  .ph:hover {
+    border-color: rgba(234, 217, 160, 0.55);
+    box-shadow: 0 22px 48px -30px rgba(0, 0, 0, 0.7);
+  }
+  .ph-round {
+    border-radius: 50%;
+  }
+  .ph-icon {
+    width: clamp(28px, 6%, 40px);
+    min-width: 28px;
+    height: auto;
+    opacity: 0.85;
+    filter: drop-shadow(0 0 8px rgba(234, 217, 160, 0.35));
+  }
+  .ph-label {
+    font-family: var(--serif);
+    font-size: clamp(0.95rem, 2vw, 1.15rem);
+    letter-spacing: 0.04em;
+    color: var(--text);
+    padding-inline: 1rem;
+  }
+  .ph-hint {
+    font-family: var(--sans);
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.28em;
+    font-size: 0.62rem;
+    color: var(--gold);
+    opacity: 0.75;
+  }
+</style>
