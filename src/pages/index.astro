@@ -1,0 +1,622 @@
+---
+import Layout from '../layouts/Layout.astro';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const contactMail = 'kontakt@stefanie-wunder.de';
+---
+
+<Layout title="Stefanie Wunder · Seelenplan-Lesung · Lichtkanal · Life Coaching">
+  <!-- ambient star field -->
+  <div class="stars" aria-hidden="true">
+    <span style="top:14%; left:18%; --d:4.5s; --s:2px"></span>
+    <span style="top:22%; left:78%; --d:6s; --s:1px"></span>
+    <span style="top:42%; left:8%; --d:5.2s; --s:1.5px"></span>
+    <span style="top:62%; left:88%; --d:7s; --s:2px"></span>
+    <span style="top:78%; left:24%; --d:5.8s; --s:1px"></span>
+    <span style="top:86%; left:66%; --d:6.6s; --s:1.5px"></span>
+    <span style="top:33%; left:50%; --d:8s; --s:1px"></span>
+    <span style="top:8%; left:42%; --d:6.2s; --s:1.5px"></span>
+  </div>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <header class="hero">
+      <div class="hero-inner">
+        <div class="logo-wrap">
+          <img src={`${base}/Logo.png`} alt="Logo Stefanie Wunder – Lotus mit Stern" width="220" height="220" />
+        </div>
+        <h1>Stefanie Wunder</h1>
+        <p class="tagline">Seelenplan-Lesung&nbsp;· Lichtkanal&nbsp;· Life&nbsp;Coaching</p>
+        <div class="divider"><span></span></div>
+        <p class="hero-headline">Finde zurück zu deiner inneren Klarheit</p>
+      </div>
+      <a class="scroll-cue" href="#intro" aria-label="Nach unten scrollen">
+        <span></span>
+      </a>
+    </header>
+
+    <!-- ============ INTRO / QUOTE ============ -->
+    <section id="intro" class="section">
+      <div class="wrap narrow">
+        <blockquote class="reveal">
+          „Alles darf sein. Nichts muss. Es gibt kein Richtig und kein Falsch –
+          nur Entscheidungen, die dich auf deinem Weg weiterführen.“
+        </blockquote>
+        <p class="reveal lead">
+          Es geht nicht darum, die richtigen Antworten im Außen zu finden.
+          Sondern darum, deiner eigenen inneren Wahrheit wieder zu vertrauen.
+        </p>
+        <p class="reveal">
+          Es gibt Zeiten im Leben, in denen wir spüren, dass etwas in Bewegung
+          kommen möchte – nicht, weil wir unvollständig sind, sondern weil wir
+          bereit sind, uns selbst auf einer tieferen Ebene zu begegnen.
+        </p>
+        <p class="reveal">
+          Ich begleite Menschen, die sich nach Klarheit, Vertrauen und einer
+          bewussten Verbindung zu sich selbst sehnen. Meine Arbeit schafft einen
+          Raum, in dem du ankommen darfst – ohne Erwartungen, ohne Bewertung und
+          ohne den Anspruch, jemand anderes werden zu müssen.
+        </p>
+        <p class="reveal accent-line">
+          <strong>Alles darf sein. Nichts muss.</strong> Denn ich glaube daran,
+          dass jeder Mensch seinen eigenen Weg in sich trägt.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ WUNSCH ============ -->
+    <section class="section section-soft">
+      <div class="wrap narrow center">
+        <span class="reveal eyebrow">Mein Wunsch für dich</span>
+        <p class="reveal lead">
+          Ich wünsche mir, dass du dich wieder an deine eigene Kraft erinnerst.
+          Dass du dir selbst vertraust. Dass du erkennst, wie viel bereits in dir
+          vorhanden ist. Und dass du dein Leben Schritt für Schritt so gestaltest,
+          wie es sich für dich wahrhaftig anfühlt.
+        </p>
+        <p class="reveal closing-note">Denn genau dort beginnt Lebendigkeit.</p>
+      </div>
+    </section>
+
+    <!-- ============ BEGLEITUNG / SERVICES ============ -->
+    <section id="begleitung" class="section">
+      <div class="wrap">
+        <div class="center section-head">
+          <span class="reveal eyebrow">Meine Begleitung</span>
+          <h2 class="reveal">Im Mittelpunkt stehst&nbsp;du</h2>
+          <p class="reveal lead">
+            Jeder Mensch trägt seinen eigenen Weg in sich. Ob Seelenplan-Lesung,
+            Lichtkanal oder Life Coaching – im Mittelpunkt stehst immer du.
+          </p>
+        </div>
+
+        <div class="cards">
+          <article class="card reveal">
+            <span class="card-no">01</span>
+            <h3>Seelenplan-Lesung<sup>®</sup></h3>
+            <p>
+              Jeder Mensch bringt einzigartige Potenziale, Erfahrungen und
+              Lebensthemen mit.
+            </p>
+            <p>
+              Die Seelenplan-Lesung lädt dazu ein, einen neuen Blick auf deine
+              persönlichen Stärken, Herausforderungen und Entwicklungs­möglichkeiten
+              zu gewinnen. Sie kann Orientierung schenken, Zusammenhänge sichtbar
+              machen und dich dabei unterstützen, deinen Weg mit mehr Vertrauen und
+              Leichtigkeit zu gehen.
+            </p>
+          </article>
+
+          <article class="card reveal">
+            <span class="card-no">02</span>
+            <h3>Lichtkanal</h3>
+            <p>
+              Als Lichtkanal empfange ich intuitive Botschaften und Impulse, die
+              dich in deiner aktuellen Lebenssituation begleiten können.
+            </p>
+            <p>
+              Viele Menschen erleben diese Begegnungen als tief berührend,
+              stärkend und klärend – ein Raum, in dem wieder Verbindung zur eigenen
+              inneren Weisheit entstehen darf.
+            </p>
+          </article>
+
+          <article class="card reveal">
+            <span class="card-no">03</span>
+            <h3>Life Coaching</h3>
+            <p>Wirkliche Veränderung beginnt dort, wo Klarheit entsteht.</p>
+            <p>
+              Gemeinsam betrachten wir deine aktuelle Situation, lösen
+              einschränkende Muster und richten den Blick auf das, was für dich
+              wirklich stimmig ist. Im Coaching begleite ich dich dabei,
+            </p>
+            <ul>
+              <li>Klarheit über deine Ziele zu gewinnen</li>
+              <li>Blockaden und einschränkende Glaubenssätze zu erkennen</li>
+              <li>neue Perspektiven zu entwickeln</li>
+              <li>dein Selbstvertrauen zu stärken</li>
+              <li>mutige Entscheidungen für dein Leben zu treffen</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WIE ICH ARBEITE / HALTUNG ============ -->
+    <section class="section section-soft">
+      <div class="wrap two-col">
+        <div class="col reveal">
+          <span class="eyebrow">Wie ich arbeite</span>
+          <p>
+            Ich gebe keine fertigen Antworten und keine festen Wege vor. Ich
+            eröffne einen Raum, in dem du deine eigenen Antworten wieder hören
+            kannst.
+          </p>
+          <p class="accent-words">Mit Klarheit. Mit Vertrauen. Mit Leichtigkeit.</p>
+          <p>
+            So entsteht Entwicklung nicht aus Druck, sondern aus innerer
+            Verbundenheit.
+          </p>
+        </div>
+        <div class="col reveal">
+          <span class="eyebrow">Meine Haltung</span>
+          <p>
+            Ich begegne jedem Menschen mit Wertschätzung, Offenheit und Respekt.
+            Dankbarkeit, Vertrauen, Liebe, Ehrlichkeit und Authentizität bilden
+            das Fundament meiner Arbeit.
+          </p>
+          <p><strong>Ich glaube nicht an richtig oder falsch.</strong></p>
+          <p>
+            Wir treffen jeden Tag unzählige Entscheidungen. Und jede Entscheidung
+            ist in genau diesem Moment die richtige – denn sie entspricht dem
+            Wissen, den Erfahrungen und dem Bewusstsein, das uns in diesem
+            Augenblick zur Verfügung steht. Erst der nächste Schritt eröffnet neue
+            Möglichkeiten.
+          </p>
+          <p>
+            Deshalb geht es in meiner Begleitung nicht darum, perfekte
+            Entscheidungen zu treffen. Sondern darum, Entscheidungen bewusst zu
+            treffen.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section id="kontakt" class="section cta">
+      <div class="wrap narrow center">
+        <span class="reveal eyebrow">Lust auf den nächsten Schritt?</span>
+        <h2 class="reveal">
+          Wenn etwas in Bewegung<br />kommen möchte
+        </h2>
+        <p class="reveal lead">
+          Wenn du spürst, dass etwas in Bewegung kommen möchte, lade ich dich
+          herzlich ein, mit mir in Kontakt zu treten.
+        </p>
+        <div class="reveal">
+          <a class="btn" href={`mailto:${contactMail}`}>Kontakt aufnehmen</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+      <div class="wrap footer-grid">
+        <div class="footer-brand">
+          <img src={`${base}/Logo.png`} alt="" width="64" height="64" />
+          <div>
+            <p class="footer-name">Stefanie Wunder</p>
+            <p class="footer-sub">Seelenplan-Lesung · Lichtkanal · Life Coaching</p>
+          </div>
+        </div>
+        <nav class="footer-nav">
+          <a href="#begleitung">Begleitung</a>
+          <a href="#kontakt">Kontakt</a>
+          <a href={`${base}/impressum`}>Impressum</a>
+          <a href={`${base}/datenschutz`}>Datenschutz</a>
+        </nav>
+      </div>
+      <p class="footer-copy">© 2026 Stefanie Wunder · Alle Rechte vorbehalten</p>
+    </footer>
+  </main>
+</Layout>
+
+<style>
+  /* ---------- shared layout ---------- */
+  .wrap {
+    width: min(1120px, 90vw);
+    margin-inline: auto;
+  }
+  .wrap.narrow {
+    width: min(720px, 90vw);
+  }
+  .center {
+    text-align: center;
+  }
+  .section {
+    padding: clamp(5rem, 12vh, 9rem) 0;
+    position: relative;
+  }
+  .section-soft {
+    background:
+      radial-gradient(120% 60% at 50% 0%, rgba(191, 215, 234, 0.05), transparent 60%),
+      var(--bg-soft);
+    border-block: 1px solid var(--line);
+  }
+
+  .eyebrow {
+    display: inline-block;
+    font-family: var(--sans);
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.34em;
+    font-size: 0.72rem;
+    color: var(--gold);
+    margin-bottom: 1.6rem;
+    padding-left: 0.34em;
+  }
+  .lead {
+    font-size: clamp(1.1rem, 2.4vw, 1.35rem);
+    color: var(--text);
+    font-weight: 300;
+  }
+
+  /* ---------- stars ---------- */
+  .stars {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+  }
+  .stars span {
+    position: absolute;
+    width: var(--s);
+    height: var(--s);
+    border-radius: 50%;
+    background: var(--gold);
+    opacity: 0.4;
+    box-shadow: 0 0 6px 1px rgba(234, 217, 160, 0.6);
+    animation: twinkle var(--d) ease-in-out infinite;
+  }
+  @keyframes twinkle {
+    0%, 100% { opacity: 0.12; transform: scale(0.8); }
+    50% { opacity: 0.7; transform: scale(1.25); }
+  }
+
+  /* ---------- hero ---------- */
+  .hero {
+    position: relative;
+    min-height: 100svh;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding: 6rem 1.5rem 4rem;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    width: min(80vw, 820px);
+    aspect-ratio: 1;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(
+      circle,
+      rgba(191, 215, 234, 0.1),
+      rgba(234, 217, 160, 0.05) 40%,
+      transparent 68%
+    );
+    z-index: -1;
+  }
+  .hero-inner {
+    animation: rise 1.4s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+  @keyframes rise {
+    from { opacity: 0; transform: translateY(34px); }
+    to { opacity: 1; transform: none; }
+  }
+  .logo-wrap {
+    width: clamp(150px, 28vw, 224px);
+    margin: 0 auto 2.4rem;
+  }
+  .logo-wrap img {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: drop-shadow(0 0 26px rgba(234, 217, 160, 0.32));
+    animation: glow 5.5s ease-in-out infinite;
+  }
+  @keyframes glow {
+    0%, 100% { filter: drop-shadow(0 0 20px rgba(234, 217, 160, 0.22)); }
+    50% { filter: drop-shadow(0 0 36px rgba(234, 217, 160, 0.45)); }
+  }
+  .hero h1 {
+    font-size: clamp(2.8rem, 8vw, 5.4rem);
+    font-weight: 500;
+    color: var(--text);
+    letter-spacing: 0.02em;
+  }
+  .tagline {
+    margin-top: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.32em;
+    font-size: clamp(0.66rem, 1.7vw, 0.82rem);
+    color: var(--lotus);
+    font-weight: 400;
+  }
+  .divider {
+    margin: 2.4rem auto;
+    width: 100%;
+    max-width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .divider span {
+    height: 1px;
+    flex: 1;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  }
+  .hero-headline {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: clamp(1.4rem, 4.4vw, 2.4rem);
+    color: var(--gold);
+    font-weight: 400;
+    line-height: 1.3;
+  }
+  .scroll-cue {
+    position: absolute;
+    bottom: 2.4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 26px;
+    height: 42px;
+    border: 1px solid rgba(234, 217, 160, 0.45);
+    border-radius: 14px;
+    display: grid;
+    place-items: start center;
+    padding-top: 8px;
+  }
+  .scroll-cue span {
+    width: 3px;
+    height: 8px;
+    border-radius: 2px;
+    background: var(--gold);
+    animation: scrolldot 1.8s ease-in-out infinite;
+  }
+  @keyframes scrolldot {
+    0% { opacity: 0; transform: translateY(-4px); }
+    40% { opacity: 1; }
+    80%, 100% { opacity: 0; transform: translateY(12px); }
+  }
+
+  /* ---------- intro ---------- */
+  blockquote {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: clamp(1.5rem, 4vw, 2.3rem);
+    line-height: 1.4;
+    color: var(--lotus);
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+  }
+  .section p + p {
+    margin-top: 1.5rem;
+  }
+  .accent-line {
+    margin-top: 2.2rem;
+    padding-left: 1.4rem;
+    border-left: 2px solid var(--gold);
+  }
+  .closing-note {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: clamp(1.3rem, 3.4vw, 1.8rem);
+    color: var(--gold);
+    margin-top: 2rem;
+  }
+
+  /* ---------- section head ---------- */
+  .section-head {
+    max-width: 700px;
+    margin: 0 auto clamp(3rem, 7vw, 4.5rem);
+  }
+  .section-head h2 {
+    font-size: clamp(2rem, 5.4vw, 3.2rem);
+    color: var(--text);
+    margin-bottom: 1.4rem;
+  }
+
+  /* ---------- cards ---------- */
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.6rem;
+    align-items: start;
+  }
+  .card {
+    position: relative;
+    padding: 2.6rem 2rem;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.025), transparent);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+      border-color 0.6s ease, box-shadow 0.6s ease;
+  }
+  .card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(234, 217, 160, 0.4);
+    box-shadow: 0 24px 50px -28px rgba(0, 0, 0, 0.8);
+  }
+  .card-no {
+    font-family: var(--serif);
+    font-size: 1rem;
+    color: var(--gold);
+    letter-spacing: 0.2em;
+    opacity: 0.7;
+  }
+  .card h3 {
+    font-size: clamp(1.5rem, 3vw, 1.85rem);
+    color: var(--text);
+    margin: 0.7rem 0 1.4rem;
+  }
+  .card h3 sup {
+    font-size: 0.5em;
+    color: var(--gold);
+    top: -0.9em;
+  }
+  .card p + p {
+    margin-top: 1rem;
+  }
+  .card ul {
+    list-style: none;
+    margin-top: 1.3rem;
+    display: grid;
+    gap: 0.7rem;
+  }
+  .card li {
+    position: relative;
+    padding-left: 1.5rem;
+    color: var(--text-muted);
+    font-size: 0.98rem;
+    line-height: 1.6;
+  }
+  .card li::before {
+    content: '✶';
+    position: absolute;
+    left: 0;
+    top: 0.05em;
+    color: var(--gold);
+    font-size: 0.85em;
+  }
+
+  /* ---------- two column ---------- */
+  .two-col {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: clamp(2.5rem, 6vw, 5rem);
+  }
+  .col p + p {
+    margin-top: 1.3rem;
+  }
+  .accent-words {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: clamp(1.25rem, 2.6vw, 1.6rem);
+    color: var(--lotus) !important;
+    margin: 1.4rem 0;
+  }
+
+  /* ---------- cta ---------- */
+  .cta {
+    text-align: center;
+  }
+  .cta h2 {
+    font-size: clamp(2.2rem, 6vw, 3.6rem);
+    color: var(--text);
+    margin-bottom: 1.6rem;
+  }
+  .btn {
+    display: inline-block;
+    margin-top: 2.6rem;
+    padding: 1.05rem 3rem;
+    font-family: var(--sans);
+    font-weight: 400;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-size: 0.82rem;
+    color: var(--gold);
+    border: 1px solid var(--gold);
+    border-radius: 2px;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.5s ease;
+    z-index: 0;
+  }
+  .btn::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--gold);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+    z-index: -1;
+  }
+  .btn:hover {
+    color: var(--bg);
+  }
+  .btn:hover::before {
+    transform: scaleX(1);
+  }
+
+  /* ---------- footer ---------- */
+  .footer {
+    border-top: 1px solid var(--line);
+    padding: 3.6rem 0 2.4rem;
+    background: var(--bg-soft);
+  }
+  .footer-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .footer-brand img {
+    width: 56px;
+    height: 56px;
+    opacity: 0.9;
+  }
+  .footer-name {
+    font-family: var(--serif);
+    font-size: 1.3rem;
+    color: var(--text);
+  }
+  .footer-sub {
+    font-size: 0.74rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+  }
+  .footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.8rem;
+  }
+  .footer-nav a {
+    font-size: 0.82rem;
+    letter-spacing: 0.1em;
+    color: var(--text-muted);
+    transition: color 0.3s ease;
+  }
+  .footer-nav a:hover {
+    color: var(--gold);
+  }
+  .footer-copy {
+    text-align: center;
+    margin-top: 2.6rem;
+    font-size: 0.74rem;
+    letter-spacing: 0.1em;
+    color: var(--text-muted);
+    opacity: 0.7;
+  }
+
+  @media (max-width: 600px) {
+    .footer-grid {
+      flex-direction: column;
+      text-align: center;
+    }
+    .footer-brand {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+</style>

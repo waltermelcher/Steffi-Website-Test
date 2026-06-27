@@ -1,0 +1,110 @@
+---
+import Layout from '../layouts/Layout.astro';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Layout title="Datenschutz · Stefanie Wunder">
+  <main class="legal">
+    <a class="back" href={`${base}/`}>← Zurück zur Startseite</a>
+    <h1>Datenschutzerklärung</h1>
+    <p class="dummy-note">
+      ⚠︎ Platzhaltertext – bitte vor Veröffentlichung durch eine rechtssichere
+      Datenschutzerklärung ersetzen.
+    </p>
+
+    <h2>1. Datenschutz auf einen Blick</h2>
+    <p>
+      Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit
+      deinen personenbezogenen Daten passiert, wenn du diese Website besuchst.
+      Personenbezogene Daten sind alle Daten, mit denen du persönlich
+      identifiziert werden kannst.
+    </p>
+
+    <h2>2. Verantwortliche Stelle</h2>
+    <p>
+      Verantwortlich für die Datenverarbeitung auf dieser Website ist:<br />
+      Stefanie Wunder<br />
+      Musterstraße 12, 12345 Musterstadt<br />
+      E-Mail: kontakt@stefanie-wunder.de
+    </p>
+
+    <h2>3. Hosting</h2>
+    <p>
+      Diese Website wird bei einem externen Dienstleister (GitHub Pages) gehostet.
+      Beim Aufruf der Seite werden technisch notwendige Server-Logdaten (z.&nbsp;B.
+      IP-Adresse, Datum und Uhrzeit des Zugriffs) verarbeitet. Rechtsgrundlage ist
+      Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;f DSGVO.
+    </p>
+
+    <h2>4. Deine Rechte</h2>
+    <p>
+      Du hast jederzeit das Recht auf Auskunft, Berichtigung, Löschung,
+      Einschränkung der Verarbeitung, Datenübertragbarkeit sowie das Recht, der
+      Verarbeitung zu widersprechen. Zudem steht dir ein Beschwerderecht bei der
+      zuständigen Aufsichtsbehörde zu.
+    </p>
+
+    <h2>5. Kontaktaufnahme</h2>
+    <p>
+      Wenn du per E-Mail Kontakt aufnimmst, werden deine Angaben zur Bearbeitung
+      der Anfrage und für mögliche Anschlussfragen gespeichert. Diese Daten gebe
+      ich nicht ohne deine Einwilligung weiter. Rechtsgrundlage ist Art.&nbsp;6
+      Abs.&nbsp;1 lit.&nbsp;b und f DSGVO.
+    </p>
+
+    <h2>6. Cookies & Tracking</h2>
+    <p>
+      Diese Website verwendet keine Tracking-Cookies und bindet keine Analyse-
+      oder Marketing-Dienste ein. Es werden ausschließlich technisch notwendige
+      Daten verarbeitet.
+    </p>
+
+    <h2>7. SSL-/TLS-Verschlüsselung</h2>
+    <p>
+      Diese Seite nutzt aus Sicherheitsgründen eine SSL-/TLS-Verschlüsselung. Eine
+      verschlüsselte Verbindung erkennst du an „https://“ in der Adresszeile deines
+      Browsers.
+    </p>
+  </main>
+</Layout>
+
+<style>
+  .legal {
+    width: min(720px, 90vw);
+    margin-inline: auto;
+    padding: clamp(4rem, 12vh, 7rem) 0 6rem;
+  }
+  .back {
+    display: inline-block;
+    margin-bottom: 3rem;
+    font-size: 0.82rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gold);
+    transition: opacity 0.3s ease;
+  }
+  .back:hover {
+    opacity: 0.7;
+  }
+  .legal h1 {
+    font-size: clamp(2.4rem, 6vw, 3.4rem);
+    color: var(--text);
+    margin-bottom: 1rem;
+  }
+  .legal h2 {
+    font-size: 1.4rem;
+    color: var(--lotus);
+    margin: 2.6rem 0 0.8rem;
+  }
+  .legal p {
+    line-height: 1.8;
+  }
+  .dummy-note {
+    color: var(--gold) !important;
+    font-size: 0.9rem;
+    border: 1px solid var(--line);
+    padding: 0.9rem 1.2rem;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+  }
+</style>

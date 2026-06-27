@@ -1,0 +1,109 @@
+---
+import Layout from '../layouts/Layout.astro';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Layout title="Impressum · Stefanie Wunder">
+  <main class="legal">
+    <a class="back" href={`${base}/`}>← Zurück zur Startseite</a>
+    <h1>Impressum</h1>
+    <p class="dummy-note">
+      ⚠︎ Platzhaltertext – bitte vor Veröffentlichung durch die echten Angaben ersetzen.
+    </p>
+
+    <h2>Angaben gemäß § 5 DDG</h2>
+    <p>
+      Stefanie Wunder<br />
+      Musterstraße 12<br />
+      12345 Musterstadt<br />
+      Deutschland
+    </p>
+
+    <h2>Kontakt</h2>
+    <p>
+      Telefon: +49 (0) 000 000000<br />
+      E-Mail: kontakt@stefanie-wunder.de
+    </p>
+
+    <h2>Umsatzsteuer-ID</h2>
+    <p>
+      Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:<br />
+      DE000000000
+    </p>
+
+    <h2>Redaktionell verantwortlich</h2>
+    <p>
+      Stefanie Wunder<br />
+      Musterstraße 12<br />
+      12345 Musterstadt
+    </p>
+
+    <h2>Haftung für Inhalte</h2>
+    <p>
+      Als Diensteanbieterin bin ich gemäß den allgemeinen Gesetzen für eigene
+      Inhalte auf diesen Seiten verantwortlich. Ich bin jedoch nicht verpflichtet,
+      übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach
+      Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
+      Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen
+      nach den allgemeinen Gesetzen bleiben hiervon unberührt.
+    </p>
+
+    <h2>Haftung für Links</h2>
+    <p>
+      Mein Angebot enthält gegebenenfalls Links zu externen Websites Dritter, auf
+      deren Inhalte ich keinen Einfluss habe. Deshalb kann ich für diese fremden
+      Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten
+      ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.
+    </p>
+
+    <h2>Urheberrecht</h2>
+    <p>
+      Die durch die Seitenbetreiberin erstellten Inhalte und Werke auf diesen
+      Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung,
+      Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen
+      des Urheberrechtes bedürfen der schriftlichen Zustimmung der jeweiligen
+      Autorin bzw. Erstellerin.
+    </p>
+  </main>
+</Layout>
+
+<style>
+  .legal {
+    width: min(720px, 90vw);
+    margin-inline: auto;
+    padding: clamp(4rem, 12vh, 7rem) 0 6rem;
+  }
+  .back {
+    display: inline-block;
+    margin-bottom: 3rem;
+    font-size: 0.82rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gold);
+    transition: opacity 0.3s ease;
+  }
+  .back:hover {
+    opacity: 0.7;
+  }
+  .legal h1 {
+    font-size: clamp(2.4rem, 6vw, 3.4rem);
+    color: var(--text);
+    margin-bottom: 1rem;
+  }
+  .legal h2 {
+    font-size: 1.4rem;
+    color: var(--lotus);
+    margin: 2.6rem 0 0.8rem;
+  }
+  .legal p {
+    line-height: 1.8;
+  }
+  .dummy-note {
+    color: var(--gold) !important;
+    font-size: 0.9rem;
+    border: 1px solid var(--line);
+    padding: 0.9rem 1.2rem;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+  }
+</style>
